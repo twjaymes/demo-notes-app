@@ -13,3 +13,5 @@ openAi
 node_modules
 dist
 build
+google
+docker

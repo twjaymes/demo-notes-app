@@ -1,0 +1,13 @@
+Sandbox
+pnpm dlx aws-api-gateway-cli-test \
+--user-pool-id='us-east-1_n9JfAbL4E' \
+--app-client-id='<USER_POOL_CLIENT_ID>' \
+--cognito-region='us-east-1' \
+--identity-pool-id='us-east-1:4432633b-f8ca-475f-9322-57bae867f5df' \
+--invoke-url='<API_ENDPOINT>' \
+--api-gateway-region='<API_REGION>' \
+--username='admin@example.com' \
+--password='Passw0rd!' \
+--path-template='/notes' \
+--method='POST' \
+--body='{"content":"hello world","attachment":"hello.jpg"}'

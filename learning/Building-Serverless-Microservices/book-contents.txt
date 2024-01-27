@@ -1,0 +1,6 @@
+Book Title	Chapter Description	Group	Half (of book)	Chapter	Page Start	Page End	Pages In Chapter	Document Type	Reading Priority ID	Status	Term	Sprint	Start Date	Current Week Number Goal Finish	Week Number Actual Finish	First Week Number Goal Finish	Finish Date
+Building Serverless Microservices in Python	Serverless Microservices Architectiures and Patterns	1	1	1	12	48	36	EPUB	1	Not Started	Q124						
+Building Serverless Microservices in Python	Creating Your First Serverless Data API	1	1	2	49	91	42	EPUB	2	Not Started	Q124						
+Building Serverless Microservices in Python	Deploying Your Serverless Stack	1	2	3	92	114	22	EPUB	5	Not Started	Q124						
+Building Serverless Microservices in Python	Testing Your Serverless Microservice	1	2	4	115	140	25	EPUB	5	Not Started	Q124						
+Building Serverless Microservices in Python	Securing Your Microservice	1	2	5	141	148	7	EPUB	5	Not Started	Q124						

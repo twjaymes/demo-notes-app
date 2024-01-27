@@ -1,0 +1,2 @@
+# ignore all api environment files
+*.env

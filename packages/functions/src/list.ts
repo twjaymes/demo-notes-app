@@ -12,7 +12,7 @@ export const main = handler(async (event) => {
     // 'ExpressionAttributeValues' defines the value in the condition
     // - ':userId': defines 'userId' to be the id of the author
     ExpressionAttributeValues: {
-      ":userId": event.requestContext.authorizer?.iam.cognitoIdentity.identityId,
+      ":userId": event.requestContext.authorizer?.iam.cognitoIdentity.identityId, // The Federated Identity id (or Identity Pool user id) assigned to our user by our Cognito Identity Pool 
     },
   };
 

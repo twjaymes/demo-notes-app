@@ -17,7 +17,7 @@ export const main = handler(async (event) => {
     TableName: Table.Notes.tableName,
     Item: {
       // The attributes of the item to be created
-      userId: event.requestContext.authorizer?.iam.cognitoIdentity.identityId, // The id of the author
+      userId: event.requestContext.authorizer?.iam.cognitoIdentity.identityId, // The Federated Identity id (or Identity Pool user id) assigned to our user by our Cognito Identity Pool 
       noteId: uuid.v1(), // A unique uuid
       content: data.content, // Parsed from request body
       attachment: data.attachment, // Parsed from request body

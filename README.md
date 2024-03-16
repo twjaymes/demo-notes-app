@@ -59,3 +59,38 @@ OUTPUT
     createdAt: 1710613703074
   }
 }
+
+
+
+
+
+
+
+
+
+Next Page: [Setup a Stripe Account] (https://sst.dev/chapters/setup-a-stripe-account.html)
+Next Page: [Handling Secrets in SST] (https://sst.dev/chapters/handling-secrets-in-sst.html)
+
+pnpm sst secrets set STRIPE_SECRET_KEY sk_test_51Ov23HJxaO01Zx6Jdqy7byT9pYjojN2SiFq5EFEILZ7xNWVlqqUCHaBqGRjJqMWwsRqEYyAGWugZTIZNI2pptwaO00xcs1hkGW
+
+
+Next Page: [Add an API to Handle Billing] (https://sst.dev/chapters/add-an-api-to-handle-billing.html)
+
+
+
+pnpm dlx aws-api-gateway-cli-test \
+--username='admin1@example.com' \
+--password='Passw0rd!' \
+--user-pool-id='us-east-1_n9JfAbL4E' \
+--app-client-id='4a67vqrvsm5a9pmlojscbugpge' \
+--cognito-region='us-east-1' \
+--identity-pool-id='us-east-1:4432633b-f8ca-475f-9322-57bae867f5df' \
+--invoke-url='https://m1gifx0nzb.execute-api.us-east-1.amazonaws.com' \
+--api-gateway-region='us-east-1' \
+--path-template='/billing' \
+--method='POST' \
+--body='{"source":"tok_visa","storage":21}'
+
+Getting temporary credentials
+Making API request
+{ status: 200, statusText: 'OK', data: { status: true } }

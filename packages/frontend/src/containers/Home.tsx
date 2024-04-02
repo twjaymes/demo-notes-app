@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import ListGroup from "react-bootstrap/ListGroup";
-import { useAppContext } from "../lib/contextLib";
-import "./Home.css";
 import { API } from "aws-amplify";
 import { NoteType } from "../types/note";
 import { onError } from "../lib/errorLib";
 import { BsPencilSquare } from "react-icons/bs";
+import ListGroup from "react-bootstrap/ListGroup";
 import { LinkContainer } from "react-router-bootstrap";
+import { useAppContext } from "../lib/contextLib";
+import "./Home.css";
 
 export default function Home() {
   const [notes, setNotes] = useState<Array<NoteType>>([]);

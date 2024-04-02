@@ -12,6 +12,8 @@ import UnauthenticatedRoute from "./components/UnauthenticatedRoute.tsx";
 export default function Links() {
   return (
     <Routes>
+      <Route path="/" element={<Home />} />
+
       <Route
   path="/login"
   element={
